@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사진 다운로드</title>
+    <style>
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <h1>내 사진 보관함</h1>
+    <div class="gallery" id="gallery">
+        <!-- 사진 카드가 여기에 들어갑니다 -->
+        <div class="card">
+            <img src="cat_photo.jpg" alt="고양이">
+            <p>귀여운 고양이</p>
+            <a href="cat_photo.jpg" download>다운로드 받기</a>
+        </div>
+    </div>
+</body>
+</html>
