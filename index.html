@@ -2,22 +2,138 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>사진 다운로드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태수의 고양이 보관함</title>
     <style>
-        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-        .card { border: 1px solid #ccc; padding: 10px; text-align: center; }
-        img { max-width: 100%; height: auto; }
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 { color: #333; }
+        
+        /* 갤러리 그리드 설정 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 카드 디자인 */
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 이미지 설정 */
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* 이미지가 찌그러지지 않게 꽉 채움 */
+            display: block;
+        }
+
+        /* 다운로드 버튼 스타일 */
+        .info { padding: 15px; }
+        .download-btn {
+            display: inline-block;
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .download-btn:hover {
+            background-color: #e68a00;
+        }
     </style>
 </head>
 <body>
-    <h1>내 사진 보관함</h1>
-    <div class="gallery" id="gallery">
-        <!-- 사진 카드가 여기에 들어갑니다 -->
+
+    <h1>🐱 고양이 사진 다운로드 센터</h1>
+    <p>원하는 사진을 클릭해서 저장하세요!</p>
+
+    <div class="gallery">
+        <!-- 사진 1 -->
         <div class="card">
-            <img src="cat_photo.jpg" alt="고양이">
-            <p>귀여운 고양이</p>
-            <a href="cat_photo.jpg" download>다운로드 받기</a>
+            <img src="main_img (1).jpg" alt="고양이">
+            <div class="info">
+                <a href="main_img (1).jpg" download class="download-btn">사진 다운로드</a>
+            </div>
+        </div>
+
+        <!-- 사진 2 (움짤) -->
+        <div class="card">
+            <img src="HDyzT6Qyuy_hmCMvsGNupmYRU23yD9EPTtuiJFaEg7rHtz_sV0_Eo373_UFfDSxU4jep_i4uFCgQC2hJRvp1Zw.gif" alt="움짤 고양이">
+            <div class="info">
+                <a href="HDyzT6Qyuy_hmCMvsGNupmYRU23yD9EPTtuiJFaEg7rHtz_sV0_Eo373_UFfDSxU4jep_i4uFCgQC2hJRvp1Zw.gif" download class="download-btn">GIF 다운로드</a>
+            </div>
+        </div>
+
+        <!-- 추가 사진들을 아래에 같은 형식으로 넣어주세요 -->
+        <div class="card">
+            <img src="i0589667965.gif" alt="움짤 고양이">
+            <div class="info">
+                <a href="i0589667965.gif" download class="download-btn">GIF 다운로드</a>
+            </div>
+        </div>
+
+                <div class="card">
+            <img src="icon_8.gif" alt="움짤 고양이">
+            <div class="info">
+                <a href="icon_8.gif" download class="download-btn">GIF 다운로드</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="icon_6.png" alt="고양이">
+            <div class="info">
+                <a href="icon_6.png" download class="download-btn">사진 다운로드</a>
+            </div>
+        </div>
+               <div class="card">
+            <img src="icon_68.gif" alt="움짤 고양이">
+            <div class="info">
+                <a href="icon_68.gif" download class="download-btn">GIF 다운로드</a>
+            </div>
+        </div>
+                 <div class="card">
+            <img src="icon_29.gif" alt="움짤 고양이">
+            <div class="info">
+                <a href="icon_29.gif" download class="download-btn">GIF 다운로드</a>
+            </div>
+        </div>
+                         <div class="card">
+            <img src="icon_31.gif" alt="움짤 고양이">
+            <div class="info">
+                <a href="icon_31.gif" download class="download-btn">GIF 다운로드</a>
+            </div>
+        </div>
+                                 <div class="card">
+            <img src="icon_41.gif" alt="움짤 고양이">
+            <div class="info">
+                <a href="icon_41.gif" download class="download-btn">GIF 다운로드</a>
+            </div>
+        </div>
+                                         <div class="card">
+            <img src="icon_21.gif" alt="움짤 고양이">
+            <div class="info">
+                <a href="icon_21.gif" download class="download-btn">GIF 다운로드</a>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
